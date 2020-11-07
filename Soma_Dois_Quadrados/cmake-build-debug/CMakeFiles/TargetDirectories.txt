@@ -1,0 +1,3 @@
+/home/akinori/Documents/Trabalho2-APA/Soma_Dois_Quadrados/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/akinori/Documents/Trabalho2-APA/Soma_Dois_Quadrados/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/akinori/Documents/Trabalho2-APA/Soma_Dois_Quadrados/cmake-build-debug/CMakeFiles/Soma_Dois_Quadrados.dir

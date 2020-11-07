@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/Quadro_de_Medalhas.dir/main.cpp.o  -o Quadro_de_Medalhas 
