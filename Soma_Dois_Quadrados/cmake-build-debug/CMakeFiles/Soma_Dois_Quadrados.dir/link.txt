@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/Soma_Dois_Quadrados.dir/main.cpp.o  -o Soma_Dois_Quadrados 
