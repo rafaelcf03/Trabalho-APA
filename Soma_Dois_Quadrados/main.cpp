@@ -1,7 +1,36 @@
 #include <iostream>
+#include <cmath>
+
+#define TRUE 1
+#define FALSE 0
+
 using namespace std;
 
 int main() {
-    cout << "Hello, World!" << endl;
-    return 0;
+    int number, x, y, answer;
+    long int sum;
+
+    cin >> number;
+    while (!cin.eof()){
+        x = 0;
+        y = sqrt(number);
+        answer = FALSE;
+
+        while (y >= x){
+            sum = x*x + y*y;
+
+            if (sum == number){
+                answer = TRUE;
+                break;
+            }
+            else if (sum < number) ++x;
+
+            else --y;
+        }
+
+        if (answer) cout << "YES\n";
+        else cout << "NO\n";
+
+        cin >> number;
+    }
 }
