@@ -10,12 +10,11 @@ int main() {
     int number, x, y, answer;
     long int sum;
 
-    cin >> number;
-    while (!cin.eof()){
+    while (cin >> number){
         x = 0;
         y = sqrt(number);
         answer = FALSE;
-
+        
         while (y >= x){
             sum = x*x + y*y;
 
@@ -30,7 +29,6 @@ int main() {
 
         if (answer) cout << "YES\n";
         else cout << "NO\n";
-
-        cin >> number;
     }
+
 }

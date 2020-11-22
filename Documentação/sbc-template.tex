@@ -8,23 +8,18 @@
 \usepackage{amsthm}
 \usepackage{amsfonts}
 \usepackage{mathtools}
-\newtheorem{teo}{Teorema}
-\newtheorem{lema}[teo]{Lema}
-\newtheorem{cor}[teo]{Corol\'ario}
-\newtheorem{prop}[teo]{Proposi\c{c}\~ao}
-\newtheorem{conj}[teo]{Conjectura}
-\newtheorem{obs}{Observa\c{c}\~ao}
+\usepackage{url}
      
 \sloppy
 
-\title{Relatório de Trabalho de Programação}
+\title{Projeto Prático de Programação: Relatório Científico}
 
-\author{Rafael de Castro Freitas\inst{1}, Felipe Gabriel\inst{1}}
+\author{Rafael de Castro Freitas\inst{1}}
 
 \address{Instituto de Informática -- Universidade Federal de Goiás
   (UFG)\\
   Alameda Palmeiras, Câmpus Samambaia -- 74690-900 -- Goi\^ania -- GO -- Brasil
-\email{\{rafaelcastro, \}@inf.ufg.br}
+\email{\{rafaelcastro\}@inf.ufg.br}
 }
 
 \begin{document} 
@@ -32,27 +27,31 @@
 \maketitle
 
 \begin{abstract}
-  
+This report aims to demonstrate the solution of two problems in the area of sort algorithms and dynamic programming. It is also a work to obtain a partial grade for the course of Analysis and Algorithms Project at the Instituto de Informática of the Federal University of Goiás. The exercises were extracted from the platform URI Online Judge (codes 1558 and 2312). It has the problems' descriptions, as well as the strategy adopted for the resolution and the tests used.
 \end{abstract}
      
 \begin{resumo} 
-
+Este relatório tem como propósito demonstrar a solução de dois problemas no tema de ordenação e programação dinâmica, e para obtenção de nota parcial para a disciplina de Análise e Projeto de Algoritmos do Instituto de Informática da Universidade Federal de Goiás. Os exercícios foram extraídos da plataforma URI Online Judge (códigos 1558 e 2312). São apresentados as descrições dos problemas, bem como a estratégia adotada para a resolução e os testes utilizados.
 \end{resumo}
 
 \section{Introdução}
+O seguinte relatório descreve a solução de dois exercícios da plataforma \textit{URI Online Judge}, ambos com o intuito de fixar o conteúdo de Ordenação de Algoritmos e Programação Dinâmica (PD), aprendidos em sala de aula. Os problemas escolhidos foram \textit{Soma de Dois Quadrados} (código 1558), o qual utiliza-se dos conceitos de PD. E o exercício \textit{Quadro de Medalhas} (código 2312), o qual utiliza-se de ordenação.
 
+O exercício Soma de Dois Quadrados\footnote{\url{https://www.urionlinejudge.com.br/judge/pt/problems/view/1558}} propõe o desafio de encontrar números inteiros que podem ser representados pela soma de dois inteiros ao quadrado. Ou seja, dado um número $n$ temos que encontrar um $x$ e um $y$ no qual a soma de seus quadrados resultam neste $n$ ($n = x^2 + y^2$). Por exemplo, o número $13$ pode ser representado por $13 = 3^2 + 2^2$. A entrada é composta por várias linhas, sendo que cada linha é composta por um inteiro $n \leq 10000$. Para cada valor de entrada, deve-se imprimir "YES" caso o inteiro possa ser representado, ou "NO" caso contrário.
 
-\section{Definições} 
+O exercício Quadro de Medalhas\footnote{\url{https://www.urionlinejudge.com.br/judge/pt/problems/view/2312}} propõe um desafio de ordenação. Um quadro de medalhas das olimpíadas está desordenado e nosso papel é coloca-lo na ordem correta. O programa deve considerar o número de medalhas de ouro para a ordenação. Caso dê empate nas medalhas de ouro, deve-se considerar o número de medalhas de prata. Caso as de prata empatem, deve-se considerar as medalhas de bronze. Por fim, caso haja empate em todas as medalhas, deve-se organizar por ordem alfabética dos países. A entrada é composta pela quantidade $N$ de países participantes ($0 \leq N \leq 500)$), seguida pela quantidade de medalhas de ouro ($O$), prata ($P$) e bronze ($B$), respectivamente; e os valores precisam obedecer o intervalo $0 \leq \{O, P, B\} \leq 10000$. Ao final, deve-se imprimir a lista de países na ordem correta, respeitando a regra descrita acima.
+
+\section{Solução dos Exercícios} 
 \label{sec:def}
 
 
 
-\section{Resultados}
+\section{Testes realizados}
 \label{sec:res}
 
 
 
-\section{Conclusões}
+\section{Considerações Finais}
 
 %\bibliographystyle{sbc}
 %\bibliography{sbc-template}
